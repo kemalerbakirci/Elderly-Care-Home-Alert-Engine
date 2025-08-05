@@ -1,0 +1,33 @@
+# Core FastAPI framework and dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database and ORM
+sqlalchemy==2.0.23
+alembic==1.12.1
+
+# Environment variables
+python-dotenv==1.0.0
+
+# MQTT client for IoT communication
+paho-mqtt==1.6.1
+
+# Data validation and serialization
+pydantic==2.5.0
+
+# Testing framework and client
+pytest==7.4.3
+httpx==0.25.2
+
+# Optional: Production server (alternative to uvicorn)
+gunicorn==21.2.0
+
+# Optional: Database drivers (uncomment as needed)
+# psycopg2-binary==2.9.9  # PostgreSQL
+# pymysql==1.1.0          # MySQL
+# sqlite3                 # Built into Python (SQLite)
+
+# Development dependencies (optional)
+# black==23.11.0          # Code formatter
+# flake8==6.1.0           # Linter
+# mypy==1.7.1             # Type checker
