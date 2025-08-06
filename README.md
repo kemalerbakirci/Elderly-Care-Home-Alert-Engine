@@ -201,12 +201,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **SQLAlchemy**: For robust database operations
 - **Elderly Care Community**: For inspiration and requirements
 
-## 📞 Support
-
-- 📧 Email: support@elderlycare-engine.com
-- 🐛 Issues: [GitHub Issues](https://github.com/kemalerbakirci/Elderly-Care-Home-Alert-Engine/issues)
-- 📖 Wiki: [Project Wiki](https://github.com/kemalerbakirci/Elderly-Care-Home-Alert-Engine/wiki)
-
 ---
 
 **Built with ❤️ for elderly care facilities worldwide**
