@@ -20,8 +20,8 @@ load_dotenv()
 BROKER_HOST = os.getenv("BROKER_HOST", "localhost")
 BROKER_PORT = int(os.getenv("BROKER_PORT", "1883"))
 
-# MQTT Client
-client = mqtt.Client(client_id="elderly-care-alert-engine")
+# MQTT Client - using callback API version 2
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="elderly-care-alert-engine")
 
 
 def evaluate_and_act(sensor_id: str, metric: str, value: float, db: Session):

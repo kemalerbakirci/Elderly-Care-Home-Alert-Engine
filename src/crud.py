@@ -39,7 +39,7 @@ def create_rule(db: Session, rule: schemas.RuleCreate):
     """
     Insert a new rule into the database.
     """
-    db_rule = models.Rule(**rule.dict())
+    db_rule = models.Rule(**rule.model_dump())
     db.add(db_rule)
     db.commit()
     db.refresh(db_rule)

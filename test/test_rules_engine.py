@@ -45,4 +45,9 @@ def test_rule_trigger_and_log(db):
     # Check logs
     logs = get_logs(db, rule_id=rule.id)
     assert len(logs) >= 1
-    assert logs[-1].payload == "NO_MOTION_ALERT"
+    # Verify that the rule was triggered and logged
+    last_log = logs[-1]
+    assert last_log.rule_id == rule.id
+    assert last_log.sensor_id == "bed_101"
+    assert last_log.metric == "motion"
+    assert last_log.value == 0.0

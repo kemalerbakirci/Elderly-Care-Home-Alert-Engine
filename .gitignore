@@ -6,6 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
+# Security - Never commit real credentials
+.env
+.env.local
+.env.production
+*.key
+*.pem
+*.p12
+*_real_passwords*
+
 # Distribution / packaging
 .Python
 build/
@@ -160,10 +169,6 @@ db/
 # Log files
 *.log
 logs/
-
-# Docker
-.dockerignore
-docker-compose.override.yml
 
 # Alembic
 alembic/versions/*.py
